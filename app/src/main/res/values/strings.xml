@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">WelcomeToFirebase</string>
+    <string name="string_mainactivity_welcome">Firebase for Android</string>
 </resources>

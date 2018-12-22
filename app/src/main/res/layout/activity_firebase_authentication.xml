@@ -4,16 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:paddingTop="16dp">
+    tools:context=".FirebaseAuthenticationActivity"
+    android:paddingTop="8dp">
 
     <TextView
+        android:id="@+id/tvInfo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/string_mainactivity_welcome"
-         android:textSize="18sp"
-        android:gravity="center"
-        android:textColor="@android:color/black"/>
+        android:text="user info:"
+        android:gravity="center"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -21,18 +20,19 @@
         android:orientation="vertical"
         android:layout_centerInParent="true"
         android:gravity="center">
-
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="analytics"
-            android:onClick="onClickAnalytics"/>
-
+            android:text="start sign-in"
+            android:layout_centerInParent="true"
+            android:onClick="onClickStartSignIn"/>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="authenticatoin"
-            android:onClick="onClickAuthentication"/>
-
+            android:text="sign out"
+            android:layout_centerInParent="true"
+            android:onClick="onClickLogout"/>
     </LinearLayout>
+
+
 </RelativeLayout>
